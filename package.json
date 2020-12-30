@@ -1,0 +1,61 @@
+{
+  "name": "react_survify",
+  "version": "1.0.0",
+  "description": "React Survey Challenge",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "lint": "standard",
+    "now-build": "npm run build",
+    "start": "webpack-dev-server --open"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@tailwindcss/aspect-ratio": "^0.2.0",
+    "@tailwindcss/forms": "^0.2.1",
+    "@tailwindcss/typography": "^0.3.1",
+    "autoprefixer": "^10.0.2",
+    "formik": "^1.5.2",
+    "history": "^4.9.0",
+    "postcss": "^8.2.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "rxjs": "^6.3.3",
+    "tailwindcss": "^2.0.2",
+    "yup": "^0.27.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "@tailwindcss/custom-forms": "^0.2.1",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "path": "^0.12.7",
+    "postcss-cli": "^8.3.0",
+    "postcss-loader": "^4.1.0",
+    "style-loader": "^2.0.0",
+    "tailwindcss": "^2.0.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/montycode/react_survify.git"
+  },
+  "keywords": [
+    "React",
+    "Survey"
+  ],
+  "author": "montycode",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/montycode/react_survify/issues"
+  },
+  "homepage": "https://github.com/montycode/react_survify#readme"
+}
