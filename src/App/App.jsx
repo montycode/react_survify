@@ -4,7 +4,7 @@ import { Router, Route } from "react-router-dom";
 import { history } from "@/_helpers";
 import { authenticationService } from "@/_services";
 import { PrivateRoute, Header, Footer } from "@/_components";
-import { HomePage, LoginPage } from "@/Pages";
+import { HomePage, LoginPage, RegisterPage } from "@/Pages";
 
 import "tailwindcss/tailwind.css";
 
@@ -31,6 +31,7 @@ class App extends React.Component {
           {currentUser && <Header />}
           <PrivateRoute exact path="/" component={HomePage} />
           <Route path="/login" component={LoginPage} />
+          <Route path="/register" component={RegisterPage} />
           {currentUser && <Footer />}
         </div>
       </Router>

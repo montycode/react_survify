@@ -60,8 +60,17 @@ module.exports = {
             '@': path.resolve(__dirname, 'src/'),
         }
     },
+    entry: {
+      index: path.resolve(__dirname, 'src/index.jsx'),
+    },
+    output: {
+      path: path.resolve(__dirname, 'dist'),
+      filename: 'app.bundle.js',
+      publicPath: '/'
+    },
     plugins: [new HtmlWebpackPlugin({
-        template: './src/index.html'
+        template: './public/index.html',
+        favicon: './public/favicon.ico'
     })],
     devServer: {
         historyApiFallback: true
@@ -69,7 +78,7 @@ module.exports = {
     externals: {
         // global app config object
         config: JSON.stringify({
-            apiUrl: 'http://localhost:4000'
+            apiUrl: 'http://localhost:1337'
         })
     }
 }
